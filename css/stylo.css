@@ -1,0 +1,126 @@
+body{box-sizing: border-box;
+padding: 0%;
+margin: 0%;}
+
+header{width: 100%;
+background-image: url(../assets/Fondo.jpg);}
+
+header div nav {
+    padding-top: 10px;}
+
+.menu{display: flex;
+flex-direction: row;
+font-size: 10px;
+justify-content: space-around;
+list-style:none;}
+
+h1{color: aliceblue;
+margin: 0;}
+.LinksMenus{text-decoration: none;
+color: aliceblue;}
+
+/*Registo Sign Up*/
+.Registro{display: flex;
+    flex-direction: column;
+    align-items: center;
+     width: 100%;
+      background: linear-gradient(180deg, rgba(108,128,161,1) 15%, rgba(46,52,64,1) 50%, rgba(20,23,28,1) 100%);}
+
+
+/*login*/
+.login{display: flex;
+    flex-direction: column;
+    align-items: center;
+     width: 100%;
+      background: linear-gradient(180deg, rgba(108,128,161,1) 15%, rgba(46,52,64,1) 50%, rgba(20,23,28,1) 100%);}
+
+
+/*Sobre nosotros */
+.mainSN{display: flex;
+    width: 100%;}
+.sectioon{width: 50%;}
+.text{display: flex;
+    width: 100%;}
+
+/*inicio*/
+.Main_Imagen{
+    background-image: url('../assets/Inicio/winterguy.png');
+     width: 100%;
+     background-size: cover;}
+
+.Snowflake{width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+    backdrop-filter: blur(10px);}
+
+
+.Snowflake h2{background-color: aliceblue;}
+
+.Snowflake p {background-color: aliceblue;
+font-size: 25px;}
+
+.Snowflake a input{border-radius: 28px;
+                   background-color: aliceblue;}
+
+/*Tarjeta Producto y ITEMS VENTAS */
+
+.Tarjeta_Item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #696f78;
+    margin: 2%;
+    color: aliceblue;
+}
+.ulcard{list-style: none;}
+
+footer{background-color: #14171C;
+color:aliceblue;
+display: flex;
+flex-direction: column;
+align-items: center;
+padding-top: 20px;}
+
+.mail{margin-top: 5px;}
+
+
+@media screen and (min-width:768px) {
+
+    .menu{font-size: 20px;}
+    h1{font-size: 50px;}
+
+    .grids{display: grid;
+    grid-template-areas:
+    "tarjeta1 tarjeta2"
+    "tarjeta3 tarjeta4"
+    "tarjeta5 tarjeta6"
+    "tarjeta7 tarjeta8"
+    "tarjeta9 ."
+    "footer footer";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;}
+
+    #tarjeta1{ grid-area: tarjeta1;}
+    #tarjeta2{grid-area: tarjeta2;}
+    #tarjeta3{grid-area: tarjeta3;}
+    #tarjeta4{grid-area: tarjeta4;}
+    #tarjeta5{grid-area: tarjeta5;}
+    #tarjeta6{grid-area: tarjeta6;}
+    #tarjeta7{grid-area: tarjeta7;}
+    #tarjeta8{grid-area: tarjeta8;}
+    #tarjeta9{grid-area: tarjeta9;}
+    .footer{grid-area: footer;
+    display: flex;
+    flex-direction: row;
+    padding-left: 5px;
+    justify-content: center;
+    gap: 25px;}
+
+}
+
+@media screen and (min-width:1024px){
+    .menu{font-size: 40px;}
+    h1{font-size: 100px;}
+        .Tarjeta_Item{background-color: #425470}}
